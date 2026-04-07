@@ -1,0 +1,10 @@
+1. Créer constante Prenom
+2. Demander prénom
+3. Prenom <= prénom entré
+4. Créer variable Age
+5. Demander Age
+6. Prenom <= prénom entré
+7. Créer variable Statut
+8. Demander statut (Connecté ou Déconnecté)
+9. Statut <= Connecté/Déconnecté
+8. Afficher Prenom, Age, Statut

@@ -1,0 +1,5 @@
+1. Créer variable A = 5
+2. Créer variable B = "Bonjour"
+3. B = Afficher A
+4. A = Afficher B
+5. Afficher A et B

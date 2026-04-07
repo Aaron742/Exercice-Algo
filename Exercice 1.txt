@@ -1,0 +1,9 @@
+1. Créer Constante AnneeDeNaissance
+2. Demander Année de naissance
+3. AnneeDeNaissance <= Année entrée
+4. Créer variable AnneeActuelle
+5. Demander Année Actuelle
+6. AnneeActuelle <= Année actuelle rentrée
+7. Effectuer AnneeActuelle - AnneeDeNaissance
+8. Stocker résultat dans variable Age
+9. Afficher Age
