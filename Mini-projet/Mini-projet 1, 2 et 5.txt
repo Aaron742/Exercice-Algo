@@ -1,0 +1,90 @@
+Mini-projet 1 :
+
+1. secretNumber <- Nombre de 1 à 100
+2. maxAttempt <- 5
+3. userAttempt <- 0
+4. TANT QUE userAttempt < 5
+	AFFICHER "Choisissez un nombre de 1 à 100 :"
+	userNumber <- L'utilisateur entre un nombre
+	userAttempt <- userAttempt + 1
+	SI userNumber !== int
+		AFFICHER "ERREUR : Veuillez choisir un nombre"
+	SI userNumber > 100
+		AFFICHER "ERREUR : Choisissez un nombre de 1 à 100"
+	SINON SI userNumber > secretNumber
+		AFFICHER "Trop grand !"
+	SINON SI userNumber < secretNumber
+		AFFICHER "Trop petit"
+	SINON SI userNumber == secretNumber
+		AFFICHER "Bien joué !"
+	FIN SI
+	SI userAttempt == maxAttempt
+		AFFICHER "Vous avez perdu le nombre secret était : " + secretNumber
+	FIN SI
+FIN TANT QUE
+
+Mini-projet 2 :
+
+1. discount <- 0
+3. FONCTION calculerPanier(listearticle)
+	totalPanier <- 0
+	POUR chaque article dans listearticle
+		totalPanier <- totalPanier + prix de l'article
+	FIN POUR
+	RETOURNER totalPanier
+	FIN
+
+
+
+Utilisation
+
+1. DEMANDER liste des articles
+2. productList <- [...] //Liste des articles de l'utilisateur
+3. SI productList < 1
+	AFFICHER "Panier vide"
+   FIN SI
+4. totalPanier <- calculerPanier(productList)
+5. AFFICHER "Total du panier" + totalPanier
+
+Mini-projet 5 : 
+
+1. FONCTION calculerMoyenne(notes)
+		POUR chaque note dans notes
+			somme <- somme + note
+			moyenne <- somme / taille de notes
+		FIN POUR
+	RETOURNER Moyenne
+	FIN FONCTION
+
+3. FONCTION meilleurNote(notes)
+		noteMax <- index de notes[0]
+		POUR chaque note dans notes
+			SI note > noteMax
+				noteMax <- note
+			FIN SI
+		RETOURNER noteMax
+	FIN FONCTION
+
+4. FONCTION pireNote(notes)
+		noteMin <- index de notes[0]
+		POUR chaque note dans notes
+			SI note < noteMin
+				noteMin <- note
+			FIN SI
+		RETOURNER noteMin
+	FIN FONCTION
+	
+Utilisation
+
+1. DEMANDER notes
+2. notes <- [...] //L'élève rentre ses notes sous forme de tableau
+3. SI notes == null 
+	AFFICHER "Aucune note"
+   FIN SI
+4. SI notes !== int
+	AFFICHER "Veuillez rentrer des nombres"
+   FIN SI
+5. moyenne <- calculerMoyenne(notes)
+6. meilleurNote <- meilleurNote(notes)
+7. pireNote <- pireNote(notes)
+8. AFFICHER "Vous avez une moyenne de " + moyenne + "Votre meilleur note est " + meilleurNote + "et votre pire note est " + pireNote
