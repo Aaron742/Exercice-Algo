@@ -1,0 +1,73 @@
+Exercice 1 :
+
+1. tabMorpion <- [
+	[" ", " ", " "],
+	[" ", " ", " "],
+	[" ", " ", " "]
+]
+
+2. tabMorpion[0][0] <- "X"
+3. tabMorpion[1][1] <- "O"
+4. tabMorpion[0][1] <- "X"
+5. tabMorpion[2][2] <- "O"
+6. POUR i de 0 à taille tabMorpion -1
+	POUR j de 0 à tabMorpion[[i]-1
+		AFFICHER tabMorpion[i][j]
+	FIN POUR
+   FIN POUR
+   
+Exercice 2 :
+
+
+1. FONCTION moyenneClassLigne(tableau, numeroLigne)
+	 somme ← 0
+	 POUR j de 0 à nombreDeColonnes(tableau[numeroLigne]) – 1
+		 somme ← somme + tableau[numeroLigne][j]
+	 FIN POUR
+	  moyenne <- somme / taille de la ligne
+	 RETOURNER Moyenne
+   FIN FONCTION
+
+2. FONCTION calculerMoyenneToutesLesClasses(tableau)
+	POUR i de 0 à nombreDeLignes(tableau) - 1
+		POUR j de 0 à nombreDeColonnes(tableau[i]) -1
+			somme <- 0 + tableau[i][j]
+		FIN POUR
+		moyenneClassGeneral <- somme / taille tableau
+		RETOURNER moyenneClassGeneral
+	FIN POUR
+
+UTILISATION
+
+1. 1. tabNotes <- [
+	[14, 5, 13, 10, 9],
+	[4, 16, 13, 17, 11],
+	[16, 15, 15, 13.5, 6]
+]
+2. moyenneClass1 <- moyenneLigne(tabNotes, 0)
+3. moyenneClass2 <- moyenneLigne(tabNotes, 1)
+4. moyenneClass3 <- moyenneLigne(tabNotes, 2)
+5. moyenneClass123 <- calculerMoyenneToutesLesClasses(tabNotes)
+
+Exercice 3 :
+
+FONCTION trouverNombre(nbrUser)
+	POUR i de 0 à 3
+	 POUR j de 0 à 3
+	 SI nbrUser == tableau[i][j]
+		AFFICHER "Ce nombre est présent dans le tableau à la ligne" + tableau[i] + "Colonne " + tableau[j]
+	 SINON
+		AFFICHER "Ce nombre n'existe pas"
+	 FIN SI
+	 FIN POUR
+	FIN POUR
+
+1. CREER Tableau
+2. tabNombres <- tabNombres[
+	[13, 6, 25, 88]
+	[55, 13, 77, 53]
+	[23, 45, 30, 98]
+	[10, 100, 74, 85]
+]
+3. DEMANDER nombreUtilisateur
+4. nombreUtilisateur <- Nombre de l'utilisateur entré

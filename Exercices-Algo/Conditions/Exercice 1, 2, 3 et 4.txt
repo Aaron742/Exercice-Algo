@@ -1,0 +1,30 @@
+Exercice 1 :
+
+1. Créer variable Age
+2. Age <= âge entré
+3. Si Age >= à 18 afficher "Vous êtes majeur(e)" sinon "Vous n'êtes pas majeur(e)
+
+Exercice 2 :
+
+1. Créer variable MotDePasse
+2. MotDePasse <= mot de passe entré
+3. Créer variable VerifMDP
+4. VerifMDP <= Mot de passe entré
+5. Si MotDePasse < 12 caractères afficher 'Le mot de passe doit contenir au moins 12 caractères"
+5. Si VerifMDP === à MotDePasse, afficher 'succès' sinon afficher 'Veuillez réessayer'
+
+Exercice 3 :
+
+1. Créer variable Note
+2. Note <= Note entrée
+3. Si Note >= à 10 afficher 'Admis' sinon afficher 'Refusé'
+4. Si Note == à 11, afficher 'Passable' OU Note == 14, afficher 'Bien' OU Note >= à 16, afficher 'Très bien'
+
+Exercice 4 :
+
+1. Créer variable CouleurDuFeu
+2. CouleurDuFeu <= Couleur entré
+3. Si CouleurDuFeu == Rouge, afficher 'Stop'
+4. Si CouleurDuFeu == Orange, afficher 'Ralentir'
+5. Si CouleurDuFeu == Vert, afficher 'Avancer'
+6. Si CouleurDuFeu !== Rouge, Orange ou Vert, afficher 'Erreur'

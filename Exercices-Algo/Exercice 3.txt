@@ -1,0 +1,8 @@
+1. Créer une variable A
+2. Créer une variable B
+3. A <= 'Bonjour'
+4. B <= 'Au revoir'
+5. Créer une variable C
+6. C <= A
+7. A = B
+8. B = C
