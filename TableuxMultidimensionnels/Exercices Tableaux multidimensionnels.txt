@@ -11,9 +11,7 @@ Exercice 1 :
 4. tabMorpion[0][1] <- "X"
 5. tabMorpion[2][2] <- "O"
 6. POUR i de 0 à taille tabMorpion -1
-	POUR j de 0 à tabMorpion[[i]-1
-		AFFICHER tabMorpion[i][j]
-	FIN POUR
+	AFFICHER tabMorpion[i][j]
    FIN POUR
    
 Exercice 2 :
@@ -29,9 +27,8 @@ Exercice 2 :
    FIN FONCTION
 
 2. FONCTION calculerMoyenneToutesLesClasses(tableau)
-	POUR i de 0 à nombreDeLignes(tableau) - 1
-		POUR j de 0 à nombreDeColonnes(tableau[i]) -1
-			somme <- 0 + tableau[i][j]
+	POUR i de 0 à taille de tableau - 1
+			somme <- somme + tableau[i]
 		FIN POUR
 		moyenneClassGeneral <- somme / taille tableau
 		RETOURNER moyenneClassGeneral
